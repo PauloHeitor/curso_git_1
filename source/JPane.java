@@ -2,14 +2,20 @@ import javax.swing.JOptionPane;
 
 public class JPane{
     
+    private String nome;
+    
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
     public void JPanel(){
-        System.out.println("Hello World!");
+        this.setNome(JOptionPane.showInputDialog("Digite seu Nome:", this.getNome()));
 
-        String txt = "Paulo Heitor";
-
-        JOptionPane.showInputDialog("Digite seu Nome:", txt);
-
-        JOptionPane.showMessageDialog(null,"Hello " + txt);
+        JOptionPane.showMessageDialog(null,"Hello " + this.getNome() + "!");
 
     }
 
