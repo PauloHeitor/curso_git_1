@@ -35,7 +35,9 @@ public class JPane{
         this.setNome(JOptionPane.showInputDialog("Digite seu Nome:", this.getNome()));
         this.setEmail(JOptionPane.showInputDialog("Digite seu EMAIL: ", this.getEmail()));
 
-        JOptionPane.showMessageDialog(null,"Hello " + this.getNome() + "!\nSeu Email é:" + this.getEmail());
+        if(this.getNome() != null && this.getEmail() != null){
+            JOptionPane.showMessageDialog(null,"Hello " + this.getNome() + "!\nSeu Email é:" + this.getEmail());
+        }
 
     }
 
