@@ -4,6 +4,14 @@ public class JPane{
     
     private String nome;
     
+    public JPane() {
+        this.nome = "";
+    }
+    
+    public JPane(String nome){
+        this.nome = nome;
+    }
+    
     public String getNome() {
         return nome;
     }
