@@ -1,7 +1,8 @@
 import javax.swing.JOptionPane;
 
-class JPane{
-    public static void main(String[] args){
+public class JPane{
+    
+    public void JPanel(){
         System.out.println("Hello World!");
 
         String txt = "Paulo Heitor";
@@ -12,4 +13,4 @@ class JPane{
 
     }
 
-    }
+}
